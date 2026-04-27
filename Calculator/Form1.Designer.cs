@@ -132,6 +132,7 @@
             AcceptButton = btnCalculate;
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = btnExit;
             ClientSize = new Size(428, 534);
             Controls.Add(lblResult);
             Controls.Add(lblOperand2);

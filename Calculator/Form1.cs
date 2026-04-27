@@ -43,6 +43,9 @@ namespace Calculator
                 // Perform the appropriate mathematical operation
                 // Used a combo box for operator selection to simplify
                 // the UI and reduce input errors
+                // Chosen by the user from a predefined list of operators
+                // Can be added in code or through the designer properties
+                // of the combo box
                 switch (selectedOperator)
                 {
                     case "+":
@@ -94,10 +97,12 @@ namespace Calculator
         }
 
         // Event handler for the Exit button click event
-        
+        // Changed cancel button properties to escape key click
+
         private void btnExit_Click(object sender, EventArgs e)
         {
             // Close the current form/application
+
             this.Close();
         }
     }
