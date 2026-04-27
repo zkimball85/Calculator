@@ -57,6 +57,7 @@
             // cbxOperator
             // 
             cbxOperator.FormattingEnabled = true;
+            cbxOperator.Items.AddRange(new object[] { "+", "-", "/", "*" });
             cbxOperator.Location = new Point(189, 114);
             cbxOperator.Name = "cbxOperator";
             cbxOperator.Size = new Size(82, 40);
@@ -66,6 +67,7 @@
             // 
             txtResult.Location = new Point(189, 268);
             txtResult.Name = "txtResult";
+            txtResult.ReadOnly = true;
             txtResult.Size = new Size(200, 39);
             txtResult.TabIndex = 3;
             // 
@@ -77,6 +79,7 @@
             btnCalculate.TabIndex = 4;
             btnCalculate.Text = "Calculate";
             btnCalculate.UseVisualStyleBackColor = true;
+            btnCalculate.Click += btnCalculate_Click;
             // 
             // btnExit
             // 
@@ -86,6 +89,7 @@
             btnExit.TabIndex = 5;
             btnExit.Text = "Exit";
             btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // lblOperand1
             // 
@@ -125,6 +129,7 @@
             // 
             // Form1
             // 
+            AcceptButton = btnCalculate;
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(428, 534);
